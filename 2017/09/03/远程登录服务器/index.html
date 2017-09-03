@@ -16,7 +16,7 @@ xfeng$ ssh root@115.61.22.241123456789101112The authenticity of host &amp;apos;1
 <meta property="og:site_name" content="啸风在学习">
 <meta property="og:description" content="使用SSH远程登录服务器ssh 指令登录服务器：ssh root@IP地址
 xfeng$ ssh root@115.61.22.241123456789101112The authenticity of host &amp;apos;115.61.22.241 (115.61.22.241)&amp;apos; can&amp;apos;t be established.ECDSA key fingerprint is">
-<meta property="og:updated_time" content="2017-09-03T12:27:26.000Z">
+<meta property="og:updated_time" content="2017-09-03T12:34:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="远程登录服务器">
 <meta name="twitter:description" content="使用SSH远程登录服务器ssh 指令登录服务器：ssh root@IP地址
@@ -222,6 +222,7 @@ xfeng$ ssh root@115.61.22.241123456789101112The authenticity of host &amp;apos;1
 <figure class="highlight plain"><figcaption><span>xfeng$ ssh root@115.61.22.241</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">The authenticity of host &apos;115.61.22.241 (115.61.22.241)&apos; can&apos;t be established.</div><div class="line">ECDSA key fingerprint is SHA256:3PzSbEZ1o1jctQK5hyeUt136Yo1kTJe1MMSwVQK7+kM.</div><div class="line">Are you sure you want to continue connecting (yes/no)? yes</div><div class="line">Warning: Permanently added &apos;115.61.22.241&apos; (ECDSA) to the list of known hosts.</div><div class="line">root@115.61.22.241&apos;s password: </div><div class="line">Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 4.4.0-85-generic x86_64)</div><div class="line"></div><div class="line"> * Documentation:  https://help.ubuntu.com/</div><div class="line"></div><div class="line">Welcome to Alibaba Cloud Elastic Compute Service !</div><div class="line"></div><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~#</div></pre></td></tr></table></figure>
 <p><em>注：操作的时候，不要使用中文输入法，避免带入中文字符</em></p>
 <h2 id="ls查询系统内容"><a href="#ls查询系统内容" class="headerlink" title="ls查询系统内容"></a>ls查询系统内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~#ls</div><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~# ls -a</div><div class="line">.  ..  .bashrc  .cache  .pip  .profile  .pydistutils.cfg  .ssh</div><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~#</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~# fdisk -l</div><div class="line"></div><div class="line">Disk /dev/vda: 42.9 GB, 42949672960 bytes</div><div class="line">255 heads, 63 sectors/track, 5221 cylinders, total 83886080 sectors</div><div class="line">Units = sectors of 1 * 512 = 512 bytes</div><div class="line">Sector size (logical/physical): 512 bytes / 512 bytes</div><div class="line">I/O size (minimum/optimal): 512 bytes / 512 bytes</div><div class="line">Disk identifier: 0x000e2ccb</div><div class="line"></div><div class="line">   Device Boot      Start         End      Blocks   Id  System</div><div class="line">/dev/vda1   *        2048    83884031    41940992   83  Linux</div><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~# df -h</div><div class="line">Filesystem      Size  Used Avail Use% Mounted on</div><div class="line">udev            484M  4.0K  484M   1% /dev</div><div class="line">tmpfs           100M  360K   99M   1% /run</div><div class="line">/dev/vda1        40G  1.8G   36G   5% /</div><div class="line">none            4.0K     0  4.0K   0% /sys/fs/cgroup</div><div class="line">none            5.0M     0  5.0M   0% /run/lock</div><div class="line">none            497M     0  497M   0% /run/shm</div><div class="line">none            100M     0  100M   0% /run/user</div><div class="line">root@iZbp16xc9vyo6w6lbv6di4Z:~#</div></pre></td></tr></table></figure>
 
       
 
@@ -325,6 +326,15 @@ xfeng$ ssh root@115.61.22.241123456789101112The authenticity of host &amp;apos;1
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/09/04/mac下配置subl启动sublime text 编辑器/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          mac下配置subl启动sublime text 编辑器
+        
+      </div>
+    </a>
   
   
     <a href="/2017/09/02/Nodejs服务器配置及项目部署/" id="article-nav-older" class="article-nav-link-wrap">

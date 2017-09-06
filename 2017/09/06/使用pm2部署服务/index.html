@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>增强服务器安全等级 | 啸风在学习</title>
+  <title>使用pm2部署服务器 | 啸风在学习</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1234567891011121314151617181920# Package generated configuration file# See the sshd_config(5) manpage for details# What ports, IPs and protocols we listen forPort 39999# Use these options to restrict">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485xfeng@xfzn:~$ ls~  app.jsxfeng@xfzn:~$">
 <meta property="og:type" content="article">
-<meta property="og:title" content="增强服务器安全等级">
-<meta property="og:url" content="http://yoursite.com/2017/09/05/增强服务器安全等级/index.html">
+<meta property="og:title" content="使用pm2部署服务器">
+<meta property="og:url" content="http://yoursite.com/2017/09/06/使用pm2部署服务/index.html">
 <meta property="og:site_name" content="啸风在学习">
-<meta property="og:description" content="1234567891011121314151617181920# Package generated configuration file# See the sshd_config(5) manpage for details# What ports, IPs and protocols we listen forPort 39999# Use these options to restrict">
-<meta property="og:image" content="http://omws9hz68.bkt.clouddn.com/15045842443212.jpg">
-<meta property="og:image" content="http://omws9hz68.bkt.clouddn.com/15045847185917.jpg">
-<meta property="og:updated_time" content="2017-09-06T02:53:24.000Z">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485xfeng@xfzn:~$ ls~  app.jsxfeng@xfzn:~$">
+<meta property="og:updated_time" content="2017-09-06T08:28:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="增强服务器安全等级">
-<meta name="twitter:description" content="1234567891011121314151617181920# Package generated configuration file# See the sshd_config(5) manpage for details# What ports, IPs and protocols we listen forPort 39999# Use these options to restrict">
-<meta name="twitter:image" content="http://omws9hz68.bkt.clouddn.com/15045842443212.jpg">
+<meta name="twitter:title" content="使用pm2部署服务器">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485xfeng@xfzn:~$ ls~  app.jsxfeng@xfzn:~$">
   
     <link rel="alternative" href="/atom.xml" title="啸风在学习" type="application/atom+xml">
   
@@ -198,32 +195,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-增强服务器安全等级" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-使用pm2部署服务" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      增强服务器安全等级
+      使用pm2部署服务器
     </h1>
   
 
         
-        <a href="/2017/09/05/增强服务器安全等级/" class="archive-article-date">
-  	<time datetime="2017-09-05T03:36:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
+        <a href="/2017/09/06/使用pm2部署服务/" class="archive-article-date">
+  	<time datetime="2017-09-06T08:15:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"># Package generated configuration file</div><div class="line"># See the sshd_config(5) manpage for details</div><div class="line"></div><div class="line"># What ports, IPs and protocols we listen for</div><div class="line">Port 39999</div><div class="line"># Use these options to restrict which interfaces/protocols sshd will bind to</div><div class="line">#ListenAddress ::</div><div class="line">#ListenAddress 0.0.0.0</div><div class="line">Protocol 2</div><div class="line"># HostKeys for protocol version 2</div><div class="line">HostKey /etc/ssh/ssh_host_rsa_key</div><div class="line">HostKey /etc/ssh/ssh_host_dsa_key</div><div class="line">HostKey /etc/ssh/ssh_host_ecdsa_key</div><div class="line">HostKey /etc/ssh/ssh_host_ed25519_key</div><div class="line">#Privilege Separation is turned on for security</div><div class="line">UsePrivilegeSeparation yes</div><div class="line"></div><div class="line"># Lifetime and size of ephemeral version 1 server key</div><div class="line">KeyRegenerationInterval 3600</div><div class="line">ServerKeyBits 1024</div></pre></td></tr></table></figure>
-<p>操作之前，打开两个终端登录服务器。</p>
-<p>修改port<br>范围：0～65535   0～1024  系统占用</p>
-<p>修改端口 39999，保证UseDNS no</p>
-<p>增加一行：<br><img src="http://omws9hz68.bkt.clouddn.com/15045842443212.jpg" alt=""></p>
-<p>关闭 root<br><img src="http://omws9hz68.bkt.clouddn.com/15045847185917.jpg" alt=""></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line">xfeng@xfzn:~$ ls</div><div class="line">~  app.js</div><div class="line">xfeng@xfzn:~$ pm2 start app.js </div><div class="line"></div><div class="line">                        -------------</div><div class="line"></div><div class="line">__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____</div><div class="line"> _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___</div><div class="line">  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__</div><div class="line">   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___</div><div class="line">    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____</div><div class="line">     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________</div><div class="line">      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________</div><div class="line">       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_</div><div class="line">        _\///______________\///______________\///__\///////////////__</div><div class="line"></div><div class="line"></div><div class="line">               Production Process Manager for Node.js apps</div><div class="line">                     with a built-in Load Balancer.</div><div class="line"></div><div class="line"></div><div class="line">                Start and Daemonize any application:</div><div class="line">                $ pm2 start app.js</div><div class="line"></div><div class="line">                Load Balance 4 instances of api.js:</div><div class="line">                $ pm2 start api.js -i 4</div><div class="line"></div><div class="line">                Monitor in production:</div><div class="line">                $ pm2 monitor</div><div class="line"></div><div class="line">                Make pm2 auto-boot at server restart:</div><div class="line">                $ pm2 startup</div><div class="line"></div><div class="line">                To go further checkout:</div><div class="line">                http://pm2.io</div><div class="line"></div><div class="line"></div><div class="line">                        -------------</div><div class="line"></div><div class="line">[PM2] Spawning PM2 daemon with pm2_home=/home/xfeng/.pm2</div><div class="line">[PM2] PM2 Successfully daemonized</div><div class="line">[PM2] Starting /home/xfeng/app.js in fork_mode (1 instance)</div><div class="line">[PM2] Done.</div><div class="line">┌──────┬──────┬────────┬───┬─────┬───────────┐</div><div class="line">│ Name │ mode │ status │ ↺ │ cpu │ memory    │</div><div class="line">├──────┼──────┼────────┼───┼─────┼───────────┤</div><div class="line">│ app  │ fork │ online │ 0 │ 1%  │ 17.5 MB   │</div><div class="line">└──────┴──────┴────────┴───┴─────┴───────────┘</div><div class="line"> Use `pm2 show &lt;id|name&gt;` to get more details about an app</div><div class="line">xfeng@xfzn:~$ pm2 list</div><div class="line">┌──────┬──────┬────────┬───┬─────┬───────────┐</div><div class="line">│ Name │ mode │ status │ ↺ │ cpu │ memory    │</div><div class="line">├──────┼──────┼────────┼───┼─────┼───────────┤</div><div class="line">│ app  │ fork │ online │ 0 │ 0%  │ 31.7 MB   │</div><div class="line">└──────┴──────┴────────┴───┴─────┴───────────┘</div><div class="line"> Use `pm2 show &lt;id|name&gt;` to get more details about an app</div><div class="line">xfeng@xfzn:~$ pm2 show app</div><div class="line"> Describing process with id 0 - name app </div><div class="line">┌───────────────────┬───────────────────────────────────────┐</div><div class="line">│ status            │ online                                │</div><div class="line">│ name              │ app                                   │</div><div class="line">│ restarts          │ 0                                     │</div><div class="line">│ uptime            │ 57s                                   │</div><div class="line">│ script path       │ /home/xfeng/app.js                    │</div><div class="line">│ script args       │ N/A                                   │</div><div class="line">│ error log path    │ /home/xfeng/.pm2/logs/app-error-0.log │</div><div class="line">│ out log path      │ /home/xfeng/.pm2/logs/app-out-0.log   │</div><div class="line">│ pid path          │ /home/xfeng/.pm2/pids/app-0.pid       │</div><div class="line">│ interpreter       │ node                                  │</div><div class="line">│ interpreter args  │ N/A                                   │</div><div class="line">│ script id         │ 0                                     │</div><div class="line">│ exec cwd          │ /home/xfeng                           │</div><div class="line">│ exec mode         │ fork_mode                             │</div><div class="line">│ node.js version   │ 8.4.0                                 │</div><div class="line">│ watch &amp; reload    │ ✘                                     │</div><div class="line">│ unstable restarts │ 0                                     │</div><div class="line">│ created at        │ 2017-09-06T08:04:33.484Z              │</div><div class="line">└───────────────────┴───────────────────────────────────────┘</div><div class="line"> Code metrics value </div><div class="line">┌────────────┬────────┐</div><div class="line">│ Loop delay │ 0.34ms │</div><div class="line">└────────────┴────────┘</div><div class="line"> Add your own code metrics: http://bit.ly/code-metrics</div><div class="line"> Use `pm2 logs app [--lines 1000]` to display logs</div><div class="line"> Use `pm2 monit` to monitor CPU and Memory usage app</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const http = require(&apos;http&apos;)</div><div class="line"></div><div class="line">http.createServer(function(req,res) &#123;</div><div class="line">  res.writeHeader(200,&#123;&apos;Content-Type&apos;:&apos;text/plain;charset=utf-8&apos;&#125;)</div><div class="line">  res.end(&apos;welcome !-----啸风在学习～！-----&apos;)</div><div class="line">&#125;).listen(8888)</div><div class="line">          </div><div class="line">         </div><div class="line">console.log(&apos;server running on http://116.62.23.242/&apos;)</div></pre></td></tr></table></figure>
 
       
 
@@ -314,7 +307,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/05/增强服务器安全等级/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/06/使用pm2部署服务/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -328,18 +321,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/05/2017-09-05/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/05/搭建 Nodejs 生产环境/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">搭建Nodeis生产环境</div>
+    <a href="/2017/09/05/Ubuntu 14.04 配置iptables防火墙/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ubuntu 14.04 配置iptables防火墙</div>
       <i class="icon-circle-right"></i>
     </a>
   
